@@ -13,7 +13,7 @@ const Budget = () => {
     }
     return (
 <div className='alert alert-secondary'>
-<span>Budget: {currency}</span>
+<span style={{marginRight: '1rem'}}>Budget: {currency}</span>
 <input type="number" step="10" value={newBudget} onChange={handleBudgetChange}></input>
 </div>
     );
