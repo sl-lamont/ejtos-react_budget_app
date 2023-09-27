@@ -8,12 +8,12 @@ const Budget = () => {
         setNewBudget(event.target.value);
         dispatch({
             type: 'SET_BUDGET',
-            payload: {newBudget},
+            payload: event.target.value,
         });
     }
     return (
 <div className='alert alert-secondary'>
-<span>Budget: £{newBudget}</span>
+<span>Budget: £</span>
 <input type="number" step="10" value={newBudget} onChange={handleBudgetChange}></input>
 </div>
     );
